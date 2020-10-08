@@ -1,0 +1,99 @@
+* {
+  font-size: large;
+  width: 960px;
+  margin: 0px auto;
+  background-color: teal
+}
+
+header > div > p{
+  width: 960px;
+  text-align: center;
+}
+
+p {
+  background-color: transparent;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+
+/* start of mobile code */
+
+@media only screen and (max-width: 760px) {
+
+* {
+  font-size: large;
+  width: 480px;
+  background-color: wheat;
+}
+
+header > div > p{
+  width: 480px;
+  margin: 0px auto;
+  text-align: center;
+}
+
+p {
+  background-color: transparent;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+section > div > p{
+  width: 100%;
+}
+
+#boxa {
+  height: 75px;
+}
+
+#boxb {
+  height: 150px;
+}
+
+#boxc {
+  height: 125px;
+
+}
+#boxd {
+  height: 125px;
+}
+
+#boxe {
+  height: 250px;
+  width: 50%;
+}
+
+#boxf {
+  height: 250px;
+  width: 50%;
+}
+
+#boxg{
+  height: 250px;
+  width: 50%;
+ }
+
+#boxh {
+  height: 250px;
+  width: 50%;
+ 
+}
+
+footer {
+  margin: 0px auto;
+  height: 80px;
+}
+ 
+
+/* end of mobile format */
+}
+
