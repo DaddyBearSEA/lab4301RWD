@@ -1,10 +1,38 @@
+/* 
+Wrapper around Body
+  Child - topbox
+            grandkid - boxa
+          mainbox
+            grandkid - box b - d
+          sectcionbox
+            grandkid - box e - h
+          footerbox
+            grandkid - box i
+
+
+
+*/
+
+
 * {
   background-color: rgb(250, 232, 232);
     
 }
 
+body {
+  /* box-sizing: border-box; */
+  width: 960px;
+  display: flex;
+  flex-wrap: wrap;
+  outline: 2px solid black;
+}
+p {
+  font-size: xx-large;
+  align-items: center;
+}
 .topbox {
-  padding: 20px;
+  flex: 1;
+  /* padding: 20px; */
   width: 960px;
   margin: 0 auto;
   height: 100px;
@@ -13,28 +41,26 @@
 }
 .boxa {
   flex: 1;
-  
+  width: 960px;
   border: 3px solid grey;
 }
 
-p {
-  font-size: xx-large;
-  text-align: center;
-  flex: 1;
-}
 .mainbox{
-  padding: 20px;
+  flex: 1;
+  order: 1;
+  /* padding: 20px; */
   display: flex;
-  width: 960px;
+  /* width: 760px; */
   margin: 0 auto;
   align-items: flex-start;
+  align-self: auto;
   /* outline: dotted 3px blue; */
 }
 
 .boxb {
   flex: 1;
   border: 3px solid grey;
-  width: 400px;
+  width: 200px;
   height: 600px;
 }
 .boxc {
@@ -52,44 +78,62 @@ p {
 }
 
 .sectionbox {
-  padding: 20px;
+  flex: 1;
+  order: 2;
+  margin: auto;
+  /* padding: 20px; */
+  /* justify-content: left; */
+  /* align-self: auto; */
   display: flex;
-  width: 760px;
-  margin: 0 auto;
-  /* outline: 3px dashed violet; */
+  /* width: 760px; */
+  /* flex-wrap: wrap; */
+  /* justify-content: flex-start; */
+  outline: 3px dashed violet;
 }
 .boxe {
   flex: 1;
-  border: 3px solid grey;
+  /* border: 3px solid grey; */
   width: 190px;
   height: 250px;
+  /* align-self: auto; */
+  /* flex-grow: 1; */
+  outline: 3px dashed red;
 }
 .boxf {
   flex: 1;
-  border: 3px solid grey;
+  /* border: 3px solid grey; */
   width: 190px;
   height: 250px;
+  /* flex-grow: 1; */
+  outline: 3px dashed red;
 }
 .boxg {
   flex: 1;
-  border: 3px solid grey;
+  /* border: 3px solid grey; */
   width: 190px;
   height: 250px;
+  /* flex-grow: 1; */
+  outline: 3px dashed red;
 }
 .boxh {
   flex: 1;
-  border: 3px solid grey;
+  /* border: 3px solid grey; */
   width: 190px;
   height: 250px;
+  /* flex-grow: 1; */
+  outline: 3px dashed red;
 }
 
 
 
 
 .footerbox {
-  padding: 20px;
+  /* padding: 20px; */
+  flex: 1;
+  order: 3;
+  
   display: flex;
-  width: 960px;
+  width: 760px;
   margin: 0 auto;
   /* outline: 3px double green; */
 }
@@ -97,4 +141,5 @@ p {
 .boxi {
   flex: 1;
   border: 3px solid grey;
+  height: 150px;
 }
